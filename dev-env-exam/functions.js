@@ -2,7 +2,7 @@
     
     checkLogin();
 //conflicting
-
+//mere!
 	// COMMEEEENT
 	var user = "";
 
