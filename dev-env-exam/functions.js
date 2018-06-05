@@ -3,6 +3,7 @@
     checkLogin();
 
 
+	// COMMEEEENT
 	var user = "";
 
 	function checkLogin(){
