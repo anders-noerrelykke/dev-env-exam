@@ -1,7 +1,7 @@
 
     
     checkLogin();
-
+//conflicting
 
 	var user = "";
 
