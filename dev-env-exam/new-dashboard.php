@@ -6,24 +6,12 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-	<link rel="stylesheet" href="styles.css">
 	<title>LOGIN</title>
-
-	 <!-- Latest compiled and minified CSS -->
+	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-	<!-- Popper JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-	
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="">
+<body>
 <div class="container col-xl-12 col-sm-12">
          <div class="row my-2">
             <div class="container col-12 bg-light">
@@ -57,7 +45,7 @@
                 
             </div>
             <div class="col bg-dark text-white display-4">
-                    A
+                A
             </div>
             
         </div>
@@ -75,7 +63,7 @@
 				--
 			</div>
             <div class="col bg-light"> 
-			<br>
+			    <br>
 				COMPLETE  <br>
 				--
 			</div>
@@ -130,7 +118,15 @@
 
     </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
 <script>
 
 

@@ -6,7 +6,7 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "websec"; //'"schema"
+$dbname = "toxic"; //'"schema"
 
 //create new connection using details
 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password); //connect
