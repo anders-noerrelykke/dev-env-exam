@@ -2,20 +2,11 @@
 ini_set('display_errors', 0);
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
-
-// //LYNN
-// //database details
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
-// $dbname = "toxic"; //'"schema"
-
-//ANDERS
 //database details
 $servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "dev-env-exam"; //'"schema"
+$username = "admin";
+$password = "admin";
+$dbname = "toxic"; //'"schema"
 
 //create new connection using details
 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password); //connect
