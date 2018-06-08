@@ -22,10 +22,21 @@
         <div class="row">
             <div class="container-fluid bg-dark text-white lead">
 				<div class="row">
-					<div class="col-8">DESPATCH / DELIVERY / JOBS / LOGS</div>
+					<div class="col-8">DESPATCH / DELIVERY / JOBS / LOGS / OVERVIEW </div>
                 	<div class="col-4 text-right small text-white-50">Peter Madsen (0403)</div>
 				</div>
 				
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col bg-info">
+                <div class="container-fluid">Depot</div>
+                <div class="container-fluid">hej</div>
+                <div class="container-fluid">hej</div>
+            </div>
+            <div class="col bg-info">
+                <div class="container-fluid">hej</div>
             </div>
         </div>
 
@@ -134,6 +145,16 @@
 	//								CLICK EVENTS
 	//----------------------------------------------------------------------//
 
+    //POST DATA TO API
+    $.post("api-get-warehouses.php",true, function(sResponse){
+        
+       // console.log(sResponse);
+        var jResponse = JSON.parse(sResponse);
+       // console.log(jResponse);
+        for(let i=0; i<jResponse.length; i++){
+            console.log(jResponse[i].idWarehouse,jResponse[i].depot_id,jResponse[i].warehouse_type_id);
+        }
+    });
 
 	//----------------------------------------------------------------------//
 	//						LOGIN / LOGOUT / CHECK USER
