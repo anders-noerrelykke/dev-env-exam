@@ -6,8 +6,10 @@
 	//DATABASE CONNECTION
 	include("database.php");
 
+	$tableName = $_REQUEST['table'];
+
 	//FETCH ROWS WITH WAREHOUSES
-	$query=$conn->prepare("select * FROM warehouse");
+	$query=$conn->prepare("select * FROM ".$tableName);
 	$query->execute();
 
 	//STORE THE ARRAY IN A VAR
