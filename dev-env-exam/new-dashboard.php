@@ -29,11 +29,11 @@
             </div>
         </div>
 
-        <div class="row my-2">
+        <div id="boxWarehouses" class="row my-2">
             <div class="col bg-info">
-                <div class="container-fluid">Depot</div>
-                <div class="container-fluid">hej</div>
-                <div class="container-fluid">hej</div>
+                <div class="container-fluid">Depot 1</div>
+                <div class="container-fluid">Warehouse ID 1</div>
+                <div class="container-fluid">Type:  </div>
             </div>
             <div class="col bg-info">
                 <div class="container-fluid">hej</div>
@@ -53,7 +53,7 @@
 					location: warehouse 2<br>
 					job: D2018-23 <br> <br> <br> <br> 
                 </div>
-                
+
             </div>
             <div class="col bg-dark text-white display-4">
                 A
@@ -145,15 +145,18 @@
 	//								CLICK EVENTS
 	//----------------------------------------------------------------------//
 
+    var oTableName = {table:"warehouse"};
+
     //POST DATA TO API
-    $.post("api-get-warehouses.php",true, function(sResponse){
+    $.post("api-get-tables.php",oTableName, function(sResponse){
         
-       // console.log(sResponse);
+        //console.log(sResponse);
         var jResponse = JSON.parse(sResponse);
        // console.log(jResponse);
         for(let i=0; i<jResponse.length; i++){
             console.log(jResponse[i].idWarehouse,jResponse[i].depot_id,jResponse[i].warehouse_type_id);
         }
+
     });
 
 	//----------------------------------------------------------------------//

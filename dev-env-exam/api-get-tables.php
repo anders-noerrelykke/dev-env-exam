@@ -1,13 +1,13 @@
 <?php 
-//START SESSION
-//session_start();
-
 
 	//DATABASE CONNECTION
 	include("database.php");
 
+	//GET VALUE FROM POST
+	$table = $_POST["table"];
+
 	//FETCH ROWS WITH WAREHOUSES
-	$query=$conn->prepare("select * FROM warehouse");
+	$query=$conn->prepare("select * FROM ".$table);
 	$query->execute();
 
 	//STORE THE ARRAY IN A VAR
